@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.playwright-mcp/
+__pycache__/
+pipeline/data/
+raw.tar.gz
+.pytest_cache/

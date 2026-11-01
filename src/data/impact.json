@@ -1,0 +1,492 @@
+{
+ "snapshot": 1793494385,
+ "samples": 100000,
+ "windows": [
+  {
+   "days": 90,
+   "humanPrs": 15865,
+   "people": 196,
+   "coverage": 100.0,
+   "declaredAgent": 85.3,
+   "writtenReviewPrs": 19.2,
+   "heldMeasured": true,
+   "sameTop5WithoutBiggestPr": false,
+   "top": [
+    {
+     "login": "webjunkie",
+     "name": "Julian Bez",
+     "top5": 99.3,
+     "rankWithoutAutonomous": 1,
+     "builders": 105,
+     "held": 1.04,
+     "corrected": 2491,
+     "expectedCorrected": 2753.5,
+     "breadth": 17,
+     "attention": 97,
+     "reviews": 54,
+     "prs": 534,
+     "autonomous": 0,
+     "volumeRank": 3,
+     "evidence": [
+      {
+       "number": 100915,
+       "title": "refactor(warehouse-sources): move sources onto the backend contract"
+      },
+      {
+       "number": 85309,
+       "title": "chore(devex): split posthog/models/integration.py into a package"
+      },
+      {
+       "number": 123952,
+       "title": "chore(devex): move django-stubs to 6.1 ahead of the django bump"
+      }
+     ]
+    },
+    {
+     "login": "rafaeelaudibert",
+     "name": "Rafael Audibert",
+     "top5": 80.9,
+     "rankWithoutAutonomous": 2,
+     "builders": 90,
+     "held": 1.16,
+     "corrected": 450,
+     "expectedCorrected": 1181.5,
+     "breadth": 9,
+     "attention": 98,
+     "reviews": 76,
+     "prs": 232,
+     "autonomous": 5,
+     "volumeRank": 12,
+     "evidence": [
+      {
+       "number": 107266,
+       "title": "feat(navigation): clean up the simple sidebar and starred products"
+      },
+      {
+       "number": 74452,
+       "title": "feat: add setup empty states for flags, experiments, and more products"
+      },
+      {
+       "number": 91076,
+       "title": "chore(templates): format Django templates with djlint"
+      }
+     ]
+    },
+    {
+     "login": "pauldambra",
+     "name": "Paul D'Ambra",
+     "top5": 67.8,
+     "rankWithoutAutonomous": 4,
+     "builders": 91,
+     "held": 1.0,
+     "corrected": 1018,
+     "expectedCorrected": 995.6,
+     "breadth": 12,
+     "attention": 89,
+     "reviews": 40,
+     "prs": 605,
+     "autonomous": 5,
+     "volumeRank": 2,
+     "evidence": [
+      {
+       "number": 99248,
+       "title": "refactor(api): split team settings module"
+      },
+      {
+       "number": 98181,
+       "title": "fix(ci): read the whole push when deciding which workers deploy"
+      },
+      {
+       "number": 98377,
+       "title": "refactor(warehouse-sources): split external data source view"
+      }
+     ]
+    },
+    {
+     "login": "mariusandra",
+     "name": "Marius Andra",
+     "top5": 66.9,
+     "rankWithoutAutonomous": 3,
+     "builders": 63,
+     "held": 0.89,
+     "corrected": 1894,
+     "expectedCorrected": 1242.9,
+     "breadth": 11,
+     "attention": 100,
+     "reviews": 83,
+     "prs": 186,
+     "autonomous": 0,
+     "volumeRank": 21,
+     "evidence": [
+      {
+       "number": 123411,
+       "title": "feat(dashboards): add a universal result context menu"
+      },
+      {
+       "number": 123270,
+       "title": "fix(dashboards): size virtualized table columns to their content"
+      },
+      {
+       "number": 100112,
+       "title": "fix(notebooks): repair widget generation and dataframe reuse"
+      }
+     ]
+    },
+    {
+     "login": "TueHaulund",
+     "name": "Tue Haulund",
+     "top5": 34.3,
+     "rankWithoutAutonomous": 7,
+     "builders": 66,
+     "held": 1.12,
+     "corrected": 1040,
+     "expectedCorrected": 1681.6,
+     "breadth": 8,
+     "attention": 93,
+     "reviews": 52,
+     "prs": 228,
+     "autonomous": 0,
+     "volumeRank": 13,
+     "evidence": [
+      {
+       "number": 125108,
+       "title": "refactor(replay-vision): rename the watch feed to highlights"
+      },
+      {
+       "number": 111574,
+       "title": "fix(replay-vision): bound activity query time and speed up team listing"
+      },
+      {
+       "number": 86606,
+       "title": "feat(replay-vision): scanner scouts behind a feature flag"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "days": 30,
+   "humanPrs": 6122,
+   "people": 148,
+   "coverage": 100.0,
+   "declaredAgent": 84.7,
+   "writtenReviewPrs": 22.7,
+   "heldMeasured": false,
+   "sameTop5WithoutBiggestPr": true,
+   "top": [
+    {
+     "login": "webjunkie",
+     "name": "Julian Bez",
+     "top5": 94.5,
+     "rankWithoutAutonomous": 1,
+     "builders": 46,
+     "held": 1.0,
+     "corrected": 440,
+     "expectedCorrected": 329.8,
+     "breadth": 8,
+     "attention": 91,
+     "reviews": 12,
+     "prs": 182,
+     "autonomous": 0,
+     "volumeRank": 4,
+     "evidence": [
+      {
+       "number": 123952,
+       "title": "chore(devex): move django-stubs to 6.1 ahead of the django bump"
+      },
+      {
+       "number": 113813,
+       "title": "feat(devex): flag project-wide filters on environment-scoped models"
+      },
+      {
+       "number": 118394,
+       "title": "chore(devex): move today highlight sources into their products"
+      }
+     ]
+    },
+    {
+     "login": "rafaeelaudibert",
+     "name": "Rafael Audibert",
+     "top5": 91.0,
+     "rankWithoutAutonomous": 3,
+     "builders": 43,
+     "held": 1.0,
+     "corrected": 51,
+     "expectedCorrected": 530.4,
+     "breadth": 7,
+     "attention": 100,
+     "reviews": 30,
+     "prs": 110,
+     "autonomous": 2,
+     "volumeRank": 10,
+     "evidence": [
+      {
+       "number": 115756,
+       "title": "feat(wizard): add a tool catalog for codebase detection"
+      },
+      {
+       "number": 122817,
+       "title": "feat(auth): ask for the email first on login and signup"
+      },
+      {
+       "number": 118246,
+       "title": "feat(onboarding): add a simple onboarding arm with an mcp step"
+      }
+     ]
+    },
+    {
+     "login": "mariusandra",
+     "name": "Marius Andra",
+     "top5": 85.1,
+     "rankWithoutAutonomous": 2,
+     "builders": 30,
+     "held": 1.0,
+     "corrected": 1038,
+     "expectedCorrected": 463.6,
+     "breadth": 7,
+     "attention": 99,
+     "reviews": 38,
+     "prs": 103,
+     "autonomous": 0,
+     "volumeRank": 12,
+     "evidence": [
+      {
+       "number": 123411,
+       "title": "feat(dashboards): add a universal result context menu"
+      },
+      {
+       "number": 123270,
+       "title": "fix(dashboards): size virtualized table columns to their content"
+      },
+      {
+       "number": 109995,
+       "title": "fix(sql-editor): preserve unrun query drafts across navigation"
+      }
+     ]
+    },
+    {
+     "login": "haacked",
+     "name": "Phil Haack",
+     "top5": 64.7,
+     "rankWithoutAutonomous": 4,
+     "builders": 34,
+     "held": 1.0,
+     "corrected": 506,
+     "expectedCorrected": 363.9,
+     "breadth": 7,
+     "attention": 99,
+     "reviews": 59,
+     "prs": 145,
+     "autonomous": 0,
+     "volumeRank": 7,
+     "evidence": [
+      {
+       "number": 121651,
+       "title": "feat(flags): lower the flag_evaluations last_called_at sync buffer to 360s"
+      },
+      {
+       "number": 110254,
+       "title": "feat(flags): skip events writes for flag evaluations only orgs"
+      },
+      {
+       "number": 120691,
+       "title": "feat(mcp): return condition_id from feature flag read tools"
+      }
+     ]
+    },
+    {
+     "login": "mayteio",
+     "name": "Harley Alexander",
+     "top5": 54.5,
+     "rankWithoutAutonomous": 5,
+     "builders": 32,
+     "held": 1.0,
+     "corrected": 189,
+     "expectedCorrected": 329.8,
+     "breadth": 7,
+     "attention": 84,
+     "reviews": 9,
+     "prs": 169,
+     "autonomous": 0,
+     "volumeRank": 6,
+     "evidence": [
+      {
+       "number": 123492,
+       "title": "fix(messaging): stop suppression refusals dropping transactional email"
+      },
+      {
+       "number": 109843,
+       "title": "feat(workflows): cap marketing messages per person across all workflows"
+      },
+      {
+       "number": 115435,
+       "title": "chore(cdp): move internal events into products/cdp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "days": 7,
+   "humanPrs": 1477,
+   "people": 111,
+   "coverage": 100.0,
+   "declaredAgent": 84.7,
+   "writtenReviewPrs": 32.5,
+   "heldMeasured": false,
+   "sameTop5WithoutBiggestPr": false,
+   "top": [
+    {
+     "login": "mariusandra",
+     "name": "Marius Andra",
+     "top5": 92.1,
+     "rankWithoutAutonomous": 1,
+     "builders": 7,
+     "held": 1.0,
+     "corrected": 139,
+     "expectedCorrected": 12.7,
+     "breadth": 3,
+     "attention": 99,
+     "reviews": 10,
+     "prs": 20,
+     "autonomous": 0,
+     "volumeRank": 20,
+     "evidence": [
+      {
+       "number": 123411,
+       "title": "feat(dashboards): add a universal result context menu"
+      },
+      {
+       "number": 123270,
+       "title": "fix(dashboards): size virtualized table columns to their content"
+      },
+      {
+       "number": 125950,
+       "title": "fix(hogql): bound saved view expansion during compilation"
+      }
+     ]
+    },
+    {
+     "login": "puemos",
+     "name": "Shy Alter",
+     "top5": 83.3,
+     "rankWithoutAutonomous": 2,
+     "builders": 9,
+     "held": 1.0,
+     "corrected": 8,
+     "expectedCorrected": 26.8,
+     "breadth": 2,
+     "attention": 87,
+     "reviews": 4,
+     "prs": 30,
+     "autonomous": 0,
+     "volumeRank": 10,
+     "evidence": [
+      {
+       "number": 117283,
+       "title": "feat(today): show experiments that need a decision or more users"
+      },
+      {
+       "number": 124692,
+       "title": "feat(slack-app): show primary metric results on experiment unfurls"
+      },
+      {
+       "number": 123865,
+       "title": "feat(search): test ranking exact-match settings with command k results"
+      }
+     ]
+    },
+    {
+     "login": "skoob13",
+     "name": "Georgiy Tarasov",
+     "top5": 77.4,
+     "rankWithoutAutonomous": 3,
+     "builders": 10,
+     "held": 1.0,
+     "corrected": 23,
+     "expectedCorrected": 47.9,
+     "breadth": 3,
+     "attention": 76,
+     "reviews": 2,
+     "prs": 30,
+     "autonomous": 0,
+     "volumeRank": 11,
+     "evidence": [
+      {
+       "number": 123904,
+       "title": "fix(tasks): extend clone retry backoff and redact diagnostics"
+      },
+      {
+       "number": 122558,
+       "title": "feat(signals): compare first-report scout models"
+      },
+      {
+       "number": 123896,
+       "title": "feat(signals): share live repository access checks in inbox"
+      }
+     ]
+    },
+    {
+     "login": "sampennington",
+     "name": "Sam Pennington",
+     "top5": 56.7,
+     "rankWithoutAutonomous": 4,
+     "builders": 6,
+     "held": 1.0,
+     "corrected": 131,
+     "expectedCorrected": 69.1,
+     "breadth": 2,
+     "attention": 86,
+     "reviews": 4,
+     "prs": 38,
+     "autonomous": 0,
+     "volumeRank": 8,
+     "evidence": [
+      {
+       "number": 125455,
+       "title": "feat(quill-charts): make the chart theme optional and read it from a provider"
+      },
+      {
+       "number": 124348,
+       "title": "fix(product-analytics): build metric cards from composable metric parts"
+      },
+      {
+       "number": 123134,
+       "title": "feat(quill-charts): make charts easy to test under any wrapper"
+      }
+     ]
+    },
+    {
+     "login": "rafaeelaudibert",
+     "name": "Rafael Audibert",
+     "top5": 48.1,
+     "rankWithoutAutonomous": 5,
+     "builders": 4,
+     "held": 1.0,
+     "corrected": 18,
+     "expectedCorrected": 191.0,
+     "breadth": 2,
+     "attention": 98,
+     "reviews": 6,
+     "prs": 42,
+     "autonomous": 2,
+     "volumeRank": 5,
+     "evidence": [
+      {
+       "number": 122817,
+       "title": "feat(auth): ask for the email first on login and signup"
+      },
+      {
+       "number": 123778,
+       "title": "refactor(toolbar): split the toolbar into floating, extension and shared"
+      },
+      {
+       "number": 125933,
+       "title": "feat(auth): open the password field inside the email card"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+}
+
+:root {
+  color-scheme: dark;
+  interpolate-size: allow-keywords;
+}
+
+body {
+  background: #000;
+  color: #fafafa;
+}

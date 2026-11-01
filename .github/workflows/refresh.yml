@@ -1,0 +1,72 @@
+name: Refresh
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ["**.md"]
+
+permissions:
+  contents: write # keeps the PR data on the "data" release
+  pages: write
+  id-token: write
+
+concurrency:
+  group: refresh
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PYTHONUNBUFFERED: 1
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+      - run: pip install -r pipeline/requirements.txt
+
+      - name: Test the pipeline
+        run: pytest
+
+      - name: Restore PR data
+        run: |
+          mkdir -p pipeline/data
+          gh release download data --pattern raw.tar.gz
+          tar xzf raw.tar.gz -C pipeline/data
+
+      - name: Refresh the numbers
+        run: python pipeline/run.py
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Build the page
+        run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}
+
+      - name: Save PR data
+        run: |
+          tar czf raw.tar.gz -C pipeline/data raw
+          gh release upload data raw.tar.gz --clobber
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: out
+
+      - id: deploy
+        uses: actions/deploy-pages@v5
